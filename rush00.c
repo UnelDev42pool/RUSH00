@@ -6,11 +6,11 @@
 /*   By: kiparis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 10:21:22 by kiparis           #+#    #+#             */
-/*   Updated: 2023/07/08 11:01:49 by kiparis          ###   ########.fr       */
+/*   Updated: 2023/07/08 14:30:13 by kiparis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.h"
+void	ft_putchar(char c);
 
 void	rush(int width, int height)
 {

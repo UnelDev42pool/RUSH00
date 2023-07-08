@@ -6,11 +6,11 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 20:36:46 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/07 22:12:35 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/08 14:33:11 by kiparis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_putchar.h"
+void	ft_putchar(char c);
 
 void	rush(int width, int height)
 {
