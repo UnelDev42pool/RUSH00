@@ -6,7 +6,7 @@
 /*   By: qguinat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 10:20:00 by qguinat           #+#    #+#             */
-/*   Updated: 2023/07/08 10:27:57 by qguinat          ###   ########.fr       */
+/*   Updated: 2023/07/08 10:35:49 by qguinat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	rush(int width, int height)
 		{
 			if ((x == 1 && y == 1) || (x == 1 && y == height))
 				ft_putchar('A');
-			else if ((x == width  && y == 1) || (x == width && y == height))
+			else if ((x == width && y == 1) || (x == width && y == height))
 				ft_putchar('C');
 			else if (x == width || x == 1 || y == height || y == 1)
 				ft_putchar('B');
@@ -38,4 +38,3 @@ void	rush(int width, int height)
 		y++;
 	}
 }
-
