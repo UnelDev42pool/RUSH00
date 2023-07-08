@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 20:10:42 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/08 14:35:06 by kiparis          ###   ########.fr       */
+/*   Updated: 2023/07/08 17:28:08 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ void	rush(int a, int b);
 
 int	main(void)
 {
-	rush(8, 5);
+	rush(5, 3);
 	return (0);
 }

@@ -3,38 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qguinat <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 10:20:00 by qguinat           #+#    #+#             */
-/*   Updated: 2023/07/08 14:31:43 by kiparis          ###   ########.fr       */
+/*   Updated: 2023/07/08 17:22:25 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	rush(int width, int height)
+void	rush(int x, int y)
 {
-	int	x;
-	int	y;
+	int	width;
+	int	height;
 
-	y = 1;
-	while (y <= height)
+	height = 1;
+	while (height <= y)
 	{
-		x = 1;
-		while (x <= width)
+		width = 1;
+		while (width <= x)
 		{
-			if ((x == 1 && y == 1) || (x == 1 && y == height))
+			if ((width == 1 && height == 1) || (width == 1 && height == y))
 				ft_putchar('A');
-			else if ((x == width && y == 1) || (x == width && y == height))
+			else if ((width == x && height == 1) || (width == x && height == y))
 				ft_putchar('C');
-			else if (x == width || x == 1 || y == height || y == 1)
+			else if (width == x || width == 1 || height == y || height == 1)
 				ft_putchar('B');
 			else
 				ft_putchar(' ');
-			if (x == width)
+			if (width == x)
 				ft_putchar('\n');
-			x++;
+			width++;
 		}
-		y++;
+		height++;
 	}
 }

@@ -6,35 +6,35 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 20:36:46 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/08 14:31:16 by kiparis          ###   ########.fr       */
+/*   Updated: 2023/07/08 17:22:25 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	rush(int width, int height)
+void	rush(int x, int y)
 {
-	int	x;
-	int	y;
+	int	width;
+	int	height;
 
-	y = 1;
-	while (y <= height)
+	height = 1;
+	while (height <= y)
 	{
-		x = 1;
-		while (x <= width)
+		width = 1;
+		while (width <= x)
 		{
-			if ((x == 1 && y == 1) || (x == width && y == 1))
+			if ((width == 1 && height == 1) || (width == x && height == 1))
 				ft_putchar('A');
-			else if ((y == height && x == 1) || (x == width && y == height))
+			else if ((height == y && width == 1) || (width == x && height == y))
 				ft_putchar('C');
-			else if (x == width || x == 1 || y == height || y == 1)
+			else if (width == x || width == 1 || height == y || height == 1)
 				ft_putchar('B');
 			else
 				ft_putchar(' ');
-			if (x == width)
+			if (width == x)
 				ft_putchar('\n');
-			x++;
+			width++;
 		}
-		y++;
+		height++;
 	}
 }
